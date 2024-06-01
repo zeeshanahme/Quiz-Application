@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.min.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <p id="timer" style="text-align: right;">
+
+        </p>
+        <div class="quiz-container">
+            <p id="ques">
+
+            </p>
+        </div><br>
+        <div class="inputdiv">
+            <input onclick="clicked()" value="1" type="radio" name="options" id="">
+            <label for="" id="opt1"></label><br>
+
+            <input onclick="clicked()" value="2" type="radio" name="options" id="">
+            <label for="" id="opt2"></label><br>
+
+            <input onclick="clicked()" value="3" type="radio" name="options" id="">
+            <label for="" id="opt3"></label><br><br>
+        </div>
+        <br>
+        <center>
+        <button id="btn" disabled onclick="nextquestion()">Next Question</button>
+        </center>
+    </div>
+
+    <script src="quiz.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

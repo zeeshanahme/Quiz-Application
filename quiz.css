@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    height: 80vh;
+    background: linear-gradient(180deg, #c5e671, #5961b6,  #c5e671);
+}
+
+.container{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    background: linear-gradient(180deg, #bbd2b4);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+   
+}
+.quiz-container {
+    background: rgba(24, 183, 222, 0.8);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+    margin: auto;
+}
+
+
+button {    
+    width: 30%;
+    padding: 14px;
+    background-color: #ff7e5f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+} 
+.swal-button-large {
+    padding: 15px 30px !important;
+    font-size: 18px !important;
+}
