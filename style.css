@@ -1,109 +1,27 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-/* Body Styling */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(180deg, #c5e671, #5961b6,  #c5e671);
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-/* Container Styling */
-.container {
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-}
+<body>
+    <div class="background">
+        <div class="login-container">
+            <h2>Login form</h2>
+            <div class="input-group">
+                <input type="email" id="lemail" name="" placeholder="email" required value="">
+            </div>
+            <div class="input-group">
+                <input type="password" id="lpass" name="" placeholder="Password" required>
+            </div>
+            <button onclick="login()">Log-in</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 
-/* Form Box Styling */
-.formbox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Title Styling */
-#title {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
-
-/* Input Group Styling */
-.input-group {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-/* Input Field Styling */
-.input-field {
-    position: relative;
-    margin-bottom: 15px;
-}
-
-.input-field i {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #999;
-}
-
-.input-field input {
-    width: 100%;
-    padding: 10px 10px 10px 40px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-    color: #333;
-}
-
-.input-field input::placeholder {
-    color: #999;
-}
-
-/* Button Styling */
-.btns {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.btns button {
-    width: 48%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-#signupbtn {
-    background: #28a745;
-    color: #fff;
-}
-
-#signinbtn {
-    background: #007bff;
-    color: #fff;
-}
-
-.btns button:hover {
-    opacity: 0.9;
-}
-
-.disab {
-    opacity: 0.6;
-    cursor: not-allowed;
-}
+</html>
